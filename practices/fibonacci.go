@@ -1,4 +1,4 @@
-package main
+package practices
 
 import "fmt"
 
@@ -11,7 +11,8 @@ func fibonacci() func() int {
 	}
 }
 
-func main() {
+// RunFibonacci demonstrates the fibonacci function
+func RunFibonacci() {
 	f := fibonacci()
 	for i := 0; i < 10; i++ {
 		fmt.Println(f())

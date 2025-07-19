@@ -1,4 +1,4 @@
-package main
+package practices
 
 import (
 	"bufio"
@@ -24,10 +24,10 @@ func fizzbuzz(s string) string {
 	default:
 		return s
 	}
-
 }
 
-func main() {
+// RunFizzbuzz demonstrates the fizzbuzz function with interactive input
+func RunFizzbuzz() {
 	stdin := bufio.NewScanner(os.Stdin)
 
 	fmt.Println("Waiting for input..., press Ctrl+D to exit")

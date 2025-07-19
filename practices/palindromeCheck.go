@@ -1,4 +1,4 @@
-package main
+package practices
 
 import (
 	"bufio"
@@ -22,10 +22,10 @@ func isPalindrome(s string) bool {
 		left += 1
 		right -= 1
 	}
-
 }
 
-func main() {
+// RunPalindromeCheck demonstrates the isPalindrome function with interactive input
+func RunPalindromeCheck() {
 	fmt.Println("Waiting for input..., press Ctrl+D to exit")
 	stdin := bufio.NewScanner(os.Stdin)
 	for stdin.Scan() {
