@@ -92,3 +92,28 @@ func (lru *LRUCache) PrintCache() {
 	}
 	fmt.Printf("(size: %d/%d)\n", len(lru.cache), lru.capacity)
 }
+
+// lru := NewLRUCache(3)
+// fmt.Println("✅ Created LRU cache with capacity 3")
+
+// // Now we can use the exported methods
+// fmt.Println("\n1. Adding items using Set method:")
+// lru.Set("1", "1")
+// lru.Set("2", "2")
+// lru.Set("3", "3")
+// lru.PrintCache()
+
+// fmt.Println("\n2. Getting items using Get method:")
+// if value, found := lru.Get("1"); found {
+// 	fmt.Printf("✅ 1: %s\n", value)
+// }
+// if value, found := lru.Get("2"); found {
+// 	fmt.Printf("✅ 2: %s\n", value)
+// }
+
+// fmt.Println("\n3. After accessing, cache order changed:")
+// lru.PrintCache()
+
+// fmt.Println("\n4. Adding new item (should evict least used):")
+// lru.Set("4", "4")
+// lru.PrintCache()
